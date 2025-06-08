@@ -1,13 +1,13 @@
 {
-	"required": true,
-	"package": "io.github.niterux.hccasfp.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"injectors": {
-		"defaultRequire": 1
-	},
-	"client": [
-		"ArmorStandEntityRendererMixin",
-		"LivingEntityRendererMixin",
-		"LivingEntityRenderStateMixin"
-	]
+  "required": true,
+  "package": "io.github.niterux.hccasfp.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "ArmorStandEntityRendererMixin",
+    "LivingEntityRendererMixin",
+    "LivingEntityRenderStateMixin"
+  ]
 }
