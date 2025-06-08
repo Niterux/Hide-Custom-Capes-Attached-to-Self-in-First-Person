@@ -1,0 +1,24 @@
+{
+	"schemaVersion": 1,
+	"id": "hccasfp",
+	"version": "${version}",
+	"name": "Hide Custom Capes Attached to Self in First Person",
+	"description": "Hides custom capes that are attached to yourself but only when you are in first person and they are attached to you and they are the right type of custom cape added by the server.",
+	"authors": [
+		"Niterux"
+	],
+	"contact": {
+		"sources": "https://github.com/Niterux/Hide-Custom-Capes-Attached-to-Self-in-First-Person"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/hccasfp/icon.png",
+	"environment": "client",
+	"mixins": [
+		"hccasfp.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.5",
+		"java": ">=21"
+	}
+}
