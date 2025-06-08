@@ -13,9 +13,9 @@ public class LivingEntityRendererMixin<S extends LivingEntityRenderState> {
     @ModifyExpressionValue(method = "render(Lnet/minecraft/client/render/entity/state/LivingEntityRenderState;Lnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;I)V", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/render/entity/LivingEntityRenderer;shouldRenderFeatures(Lnet/minecraft/client/render/entity/state/LivingEntityRenderState;)Z"))
     private boolean overrideItemRenderingConditional(boolean original, S livingEntityRenderState) {
         final MinecraftClient minecraftClient = MinecraftClient.getInstance();
-        if (((CapeItemOnHeadDuck) livingEntityRenderState).hccasfp$getIsCapeItemOnHead() && minecraftClient.options.getPerspective().isFirstPerson()) {
+        if (((CapeItemOnHeadDuck) livingEntityRenderState).hccasfp$getIsCapeItemOnHead() && minecraftClient.options.getPerspective().isFirstPerson())
             return false;
-        }
+
         return original;
     }
 }
