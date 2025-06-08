@@ -6,7 +6,7 @@
 		"defaultRequire": 1
 	},
 	"client": [
-		"ArmorStandRendererMixin",
+		"ArmorStandEntityRendererMixin",
 		"LivingEntityRendererMixin",
 		"LivingEntityRenderStateMixin"
 	]

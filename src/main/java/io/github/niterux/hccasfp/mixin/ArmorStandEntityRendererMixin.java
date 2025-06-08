@@ -19,7 +19,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(ArmorStandEntityRenderer.class)
-public class ArmorStandRendererMixin {
+public class ArmorStandEntityRendererMixin {
     @Unique
     private final Identifier CAPE_ITEM_MODEL = Items.PAPER.getComponents().get(DataComponentTypes.ITEM_MODEL);
     @Inject(method = "updateRenderState(Lnet/minecraft/entity/decoration/ArmorStandEntity;Lnet/minecraft/client/render/entity/state/ArmorStandEntityRenderState;F)V", at = @At("HEAD"))
